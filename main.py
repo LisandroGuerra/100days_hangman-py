@@ -18,7 +18,7 @@ for _ in range(word_length):
 while not game_is_finished:
     guess = input("Guess a letter: ").lower()
 
-    #Use the clear() function imported from os module
+    #Use the clear() function imported from "os" module
     system('clear')
 
     if guess in display:
@@ -36,6 +36,7 @@ while not game_is_finished:
         if lives == 0:
             game_is_finished = True
             print("You lose.")
+            print(f'The word was "{chosen_word}"')
     
     if not "_" in display:
         game_is_finished = True
